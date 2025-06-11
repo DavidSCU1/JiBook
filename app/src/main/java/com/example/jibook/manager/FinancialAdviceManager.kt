@@ -18,7 +18,7 @@ class FinancialAdviceManager(private val context: Context) {
     companion object {
         private const val TAG = "FinancialAdviceManager"
         // 更新为您的实际API密钥
-        private const val API_KEY = "fad4019c-3638-49f7-84e6-be7e0401aa36"
+        private const val API_KEY = "Replace with your own api or the agent will keep sleeping"
         // 更新API端点URL
         private const val API_URL = "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
         // 更新模型名称
