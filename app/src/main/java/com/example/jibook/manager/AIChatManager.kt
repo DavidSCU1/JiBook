@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit
 
 class AIChatManager(private val context: Context) {
     companion object {
-        private const val API_KEY = "aa32e306-cd86-4f3f-8d48-56b7db695f84"
+        private const val API_KEY = "Replace with your own api or the agent will keep sleeping"
         private const val API_URL = "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
         private const val MODEL_NAME = "doubao-1-5-lite-32k-250115"
     }
