@@ -26,7 +26,7 @@ class AIAnalysisManager(private val context: Context) {
         .connectTimeout(30, TimeUnit.SECONDS)
         .readTimeout(30, TimeUnit.SECONDS)
         .build()
-    private val apiKey = "aa32e306-cd86-4f3f-8d48-56b7db695f84"
+    private val apiKey = "Replace with your own api or the agent will keep sleeping"
     private val baseUrl = "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
     
     // 简化分析结果，只返回综合分析
