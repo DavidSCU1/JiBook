@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0F5">
+
+    <TextView
+        android:text="我的账本"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FF69B4"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"/>
+
+    <!-- 原神角色：可莉 -->
+    <ImageView
+        android:src="@drawable/girl_klee"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.9"
+        android:contentDescription="原神角色可莉"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账本名称"
+        android:textColorHint="#FF69B4">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_ledger_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69B4"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 按钮容器 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="12dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_ledger"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="创建新账本"
+            android:backgroundTint="#FFB6C1"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="2dp"/>
+
+        <!-- 收支分析按钮 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_analysis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            android:text="收支分析"
+            android:backgroundTint="#FF69B4"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="2dp"/>
+            
+        <!-- 新增预算管理按钮 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_budget_management"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="预算管理"
+            android:backgroundTint="#DA70D6"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="2dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_ledgers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"/>
+</LinearLayout>

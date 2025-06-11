@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0F5">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:tint="#FF69B4"/>
+
+        <TextView
+            android:id="@+id/text_ledger_name"
+            android:text="账本名称"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FF69B4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"/>
+    </LinearLayout>
+
+    <!-- 原神角色：胡桃 -->
+    <ImageView
+        android:src="@drawable/girl_hu_tao"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.85"
+        android:contentDescription="原神角色胡桃"/>
+
+    <!-- 第一行按钮 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:weightSum="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_record"
+            android:text="添加记录"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFB6C1"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- 删除或注释掉图表按钮 -->
+        <!-- <Button
+            android:id="@+id/btn_view_chart"
+            android:text="查看图表"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFB6C1"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"/> -->
+    </LinearLayout>
+
+    <!-- 删除理财建议按钮部分 -->
+    <!-- <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_financial_advice"
+            android:text="理财建议"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFB6C1"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="24dp"/>
+    </LinearLayout> -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_records"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"/>
+</LinearLayout>

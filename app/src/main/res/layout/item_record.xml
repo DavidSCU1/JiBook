@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- 原神角色小图标 -->
+        <ImageView
+            android:id="@+id/recordIcon"
+            android:src="@drawable/girl_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="4dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="原神角色图标"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/text_record_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="记录名称"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FF69B4"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/text_record_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型"
+                    android:textSize="14sp"
+                    android:textColor="#FFB6C1"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_corner"/>
+
+                <TextView
+                    android:id="@+id/text_record_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金额"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF69B4"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_record_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="创建时间"
+                android:textSize="12sp"
+                android:textColor="#C71585"
+                android:paddingTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

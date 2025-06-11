@@ -1,0 +1,19 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">记</string>
+    <string name="add_ledger">添加账本</string>
+    <string name="ledger_name_hint">请输入账本名称</string>
+    <string name="budget_warning">已达预算上限！</string>
+    <string name="add_record">添加记录</string>
+    <string name="record_name_hint">记录名称</string>
+    <string name="record_amount_hint">金额</string>
+    <string name="record_type_food">食品</string>
+    <string name="record_type_travel">出行</string>
+    <string name="record_type_medical">医疗</string>
+    <string name="record_type_other">其它</string>
+    <string name="budget">预算</string>
+    <string name="income">收入</string>
+    <string name="expense">支出</string>
+    <string name="enter_budget">设定预算</string>
+    <string name="view_chart">查看支出图表</string>
+</resources>

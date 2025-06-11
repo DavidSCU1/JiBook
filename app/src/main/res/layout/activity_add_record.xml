@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0F5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:text="添加新记录"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FF69B4"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edit_record_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="记录名称"
+            android:textColorHint="#FF69B4"
+            android:minHeight="48dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edit_record_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="金额"
+            android:textColorHint="#FF69B4"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_inout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收入"/>
+            <RadioButton
+                android:id="@+id/radio_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支出"
+                android:checked="true"/>
+        </RadioGroup>
+        <!-- 类型选择使用Spinner，ID为spinner_type -->
+        <Spinner
+            android:id="@+id/spinner_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@drawable/rounded_spinner"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 在Spinner下方插入 -->
+        <Button
+            android:id="@+id/btn_manage_types"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="管理类型"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edit_record_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="备注(可选)"
+            android:textColorHint="#FF69B4"
+            android:minLines="3"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btn_save_record"
+            android:text="保存记录"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69B4"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:minHeight="52dp"
+            android:elevation="2dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0F5">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:src="@drawable/ic_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:tint="#FF69B4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:text="添加记录"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FF69B4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- 原神角色：甘雨（半透明背景装饰） -->
+    <ImageView
+        android:src="@drawable/girl_ganyu"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:alpha="0.25"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="原神角色甘雨"/>
+
+    <EditText
+        android:id="@+id/recordNameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入记录名称"
+        android:textColorHint="#FF69B4"
+        android:minHeight="48dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backButton"/>
+
+    <EditText
+        android:id="@+id/recordAmountInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入金额"
+        android:textColorHint="#FF69B4"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/recordNameInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Spinner
+        android:id="@+id/recordTypeSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:minHeight="48dp"
+        android:background="@drawable/rounded_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recordAmountInput"/>
+
+    <Button
+        android:id="@+id/saveRecordButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="保存记录"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF69B4"
+        android:minHeight="52dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.9"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
