@@ -64,6 +64,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Stack Overflow 📚 - For solving those 3 AM bugs
 - The Android community 🤖 - For being awesome
 - You 👤 - For checking out this project!
+
  📞 Contact
 DavidSCU1 - DaiJunwi@outlook.com
 ALEPH31 - 3072350170@qq.com
