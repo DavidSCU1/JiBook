@@ -8,12 +8,12 @@ JiBook is not just another boring accounting app - it's your personal financial 
 
 ### ✨ Features That'll Make You Smile
 
-- 📱 Beautiful Android Interface** - Clean, intuitive, and pleasing to the eye
-- 🤖 AI-Powered Chat Assistant** - Talk to your app like it's your financial buddy
-- 📚 Multiple Ledgers** - Organize your finances like a pro
-- 💬 Natural Language Processing** - Just say "I spent 50 yuan on lunch" and watch the magic happen
-- 🎨 Modern Material Design** - Because ugly apps are so last decade
-- 🔒 Secure Local Storage** - Your data stays on your device, where it belongs
+- 📱 Beautiful Android Interface - Clean, intuitive, and pleasing to the eye
+- 🤖 AI-Powered Chat Assistant - Talk to your app like it's your financial buddy
+- 📚 Multiple Ledgers - Organize your finances like a pro
+- 💬 Natural Language Processing - Just say "I spent 50 yuan on lunch" and watch the magic happen
+- 🎨 Modern Material Design - Because ugly apps are so last decade
+- 🔒 Secure Local Storage - Your data stays on your device, where it belongs
 
  🚀 Getting Started
 
